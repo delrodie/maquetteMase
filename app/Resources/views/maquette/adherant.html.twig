@@ -1,0 +1,205 @@
+{% extends 'base.html.twig' %}
+{% block title %} Qui sommes-nous? {% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="block hidden-sm hidden-xs">
+                <div class="widget-title"><span>GHI</span></div>
+                <div class="menu-title"><a href="#">Agenda</a></div>
+                <div class="menu-title"><a href="#">Charte</a></div>
+                <div class="menu-title"><a href="#">Comité de pilotage</a></div>
+                <ul class="menu-items">
+                    <li class="item"><a href="#">Comité de pilotage</a></li>
+                    <li class="item"><a href="#">Comptes rendus</a></li>
+                </ul>
+                <div class="menu-title"><a href="#">Documentation GHI</a></div>
+                <div class="menu-title"><a href="#">Explication du CT</a></div>
+                <div class="menu-title"><a href="#">Foire aux questions</a></div>
+                <div class="menu-title"><a href="#">Le mot du président</a></div>
+                <div class="menu-title"><a href="#">Les EPI</a></div>
+                <div class="menu-title"><a href="#">Liens utiles</a></div>
+                <div class="menu-title"><a href="#">Présentation</a></div>
+                <ul class="menu-items">
+                    <li class="item"><a href="#">Historique</a></li>
+                    <li class="item"><a href="#">Contact GHI</a></li>
+                    <li class="item"><a href="#">Liste des GT GHI</a></li>
+                </ul>
+                <div class="menu-title"><a href="#">Procédures GHI</a></div>
+                <div class="menu-title"><a href="#">REX</a></div>
+            </div>
+
+            <!-- Agenda -->
+            <ul role="tablist" class="tab-popular hidden-sm hidden-xs">
+                <li class="active">
+                    <a href="#tab1" role="tab" data-toggle="tab">
+                        AGENDA
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content hidden-sm hidden-xs">
+                <div role="tabpanel" class="tab-pane active" id="tab1">
+                    <ul class="list-news-popular">
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ asset('ressources/images/agenda-01.jpg') }}" width="100">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorum modi...</p>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ asset('ressources/images/slider/slide-01.jpg') }}">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="text-right all-agenda">
+                        ...<a href="#">Voir tout l'agenda</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-12">
+            <article class="post-detail">
+                <div class="alert alert-danger" role="alert">
+                    <i class="fa fa-exclamation-triangle fa-2x"></i>
+                    <span style="font-size: 1.2em;"><strong>Vous devez être connecté pour acceder au contenu complet de cette page</strong></span>
+                </div>
+                <h1>Procédures GHI</h1>
+                <div class="row">
+                    <div class="col-md-7 col-sm-7">
+                        <div class="begin-member bg-degrade">
+                            <div class="title">Rejoignez-nous <a href="#">Devenez membre !</a></div>
+                            <div class="button">
+                                <button class="btn btn-bulletin">Bulletin d'adhésion</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 acces-membre">
+                        <i class="fa fa-users fa-2x"></i> <span class="">Accès membres</span>
+                        <div class="row form-connexion">
+                            <div class="form-group">
+                                <label for="identifiant">Indentifiant</label>
+                                <input type="text" name="identifiant" class="form-control" placeholder="Identifiant" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mot de passe</label>
+                                <input type="text" name="password" class="form-control" placeholder="Mot de passe" autocomplete="off">
+                            </div>
+                            <div class="text-right"><button class="btn btn-primary">Connexion</button></div>
+                            <div class="password-forget">
+                                <a href="#" class="">Vous avez oublié votre mot de passe ?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <section class="spotlight-thumbs actualites-partenaire">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box-caption">
+                            <span> Actualités GHI</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="spotlight-item-thumb">
+                            <div class="spotlight-item-thumb-img">
+                                <a href="#">
+                                    <img alt="" src="{{ asset('ressources/images/slider/slide-01.jpg') }}" />
+                                </a>
+                            </div>
+                            <h3><a href="#">Donald Trump suggests the DNC was hacked by 'someone sitting on their bed that weighs 400 lbs'</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    Sue	Benson
+                                </a>
+                                <em></em>
+                                <span>
+                                            22 Sep 2016
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="spotlight-item-thumb">
+                            <div class="spotlight-item-thumb-img">
+                                <a href="#">
+                                    <img alt="" src="{{ asset('ressources/images/slider/slide-02.jpg') }}" />
+                                </a>
+                            </div>
+                            <h3><a href="#">Six big ways MacOS Sierra is going to change your Apple experience</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    Marion	Craig
+                                </a>
+                                <em></em>
+                                <span>
+                                            21 Sep 2016
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="spotlight-item-thumb">
+                            <div class="spotlight-item-thumb-img">
+                                <a href="#">
+                                    <img alt="" src="{{ asset('ressources/images/slider/slide-03.jpg') }}" />
+                                </a>
+                            </div>
+                            <h3><a href="#">Messenger Bots Are Overhyped, Underpowered—and Growing like Crazy</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    Super User
+                                </a>
+                                <em></em>
+                                <span>
+                                            26 Sep 2016
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="spotlight-item-thumb">
+                            <div class="spotlight-item-thumb-img">
+                                <a href="#">
+                                    <img alt="" src="{{ asset('ressources/images/slider/slide-04.jpg') }}" />
+                                </a>
+                            </div>
+                            <h3><a href="#">Messenger Bots Are Overhyped, Underpowered—and Growing like Crazy</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    Super User
+                                </a>
+                                <em></em>
+                                <span>
+                                            26 Sep 2016
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+{% endblock %}

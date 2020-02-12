@@ -1,0 +1,228 @@
+{% extends 'base.html.twig' %}
+{% block title %} Accueil {% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-8 col-sm-12">
+            <section class="owl-carousel owl-special">
+                <div>
+                    <article class="spotlight-item">
+                        <div class="spotlight-img">
+                            <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-01.jpg')) }}" class="img-responsive" />
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="spotlight-item">
+                        <div class="spotlight-img">
+                            <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-02.jpg')) }}" class="img-responsive" />
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="spotlight-item">
+                        <div class="spotlight-img">
+                            <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-04.jpg')) }}" class="img-responsive" />
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="box-news">
+                <div class="box-caption">
+                    <span> Mission</span>
+                </div>
+                <article class="news-two-large news-three-large">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/agenda-01.jpg')) }}" />
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <p>Lacinia faucibus consectetuer vestibulum elit quisque at et ultrices sed libero. Ut nam eu nunc enim curabitur non metus eu turpis eget. Aenean laoreet vitae morbi vestibulum vestibulum sociis tellus interdum cras.</p>
+                        </div>
+                    </div>
+
+
+                </article>
+            </section>
+            <section class="spotlight-thumbs">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box-caption">
+                            <span> Actualités</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="spotlight-item-thumb">
+                            <div class="spotlight-item-thumb-img">
+                                <a href="#">
+                                    <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-03.jpg')) }}" />
+                                </a>
+                            </div>
+                            <h3><a href="#">Donald Trump suggests the DNC was hacked by 'someone sitting on their bed that weighs 400 lbs'</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    Sue	Benson
+                                </a>
+                                <em></em>
+                                <span>
+                                            22 Sep 2016
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="spotlight-item-thumb">
+                            <div class="spotlight-item-thumb-img">
+                                <a href="#">
+                                    <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-04.jpg')) }}" />
+                                </a>
+                            </div>
+                            <h3><a href="#">Six big ways MacOS Sierra is going to change your Apple experience</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    Marion	Craig
+                                </a>
+                                <em></em>
+                                <span>
+                                            21 Sep 2016
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="spotlight-item-thumb">
+                            <div class="spotlight-item-thumb-img">
+                                <a href="#">
+                                    <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-02.jpg')) }}" />
+                                </a>
+                            </div>
+                            <h3><a href="#">Messenger Bots Are Overhyped, Underpowered—and Growing like Crazy</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    Super User
+                                </a>
+                                <em></em>
+                                <span>
+                                            26 Sep 2016
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+            <ul role="tablist" class="tab-popular">
+                <li class="active">
+                    <a href="#tab1" role="tab" data-toggle="tab">
+                        AGENDA
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="tab1">
+                    <ul class="list-news-popular">
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-01.jpg')) }}" width="100">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorum modi...</p>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-02.jpg')) }}">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-01.jpg')) }}">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-04.jpg')) }}">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="text-right all-agenda">
+                        ...<a href="#">Voir tout l'agenda</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="connect-us">
+                <div class="widget-title">
+                    <span>Nos produits et services</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 partenaires">
+                        <ul class="liste-partenaires">
+                            <li><div>1 ENTREPRISE </div></li>
+                            <li><div>2 ENTREPRISE</div></li>
+                            <li><div>3 ENTREPRISE</div></li>
+                            <li><div>4 ENTREPRISE</div></li>
+                            <li><div>5 ENTREPRISE</div></li>
+                            <li><div>6 ENTREPRISE</div></li>
+                            <li><div>7 ENTREPRISE</div></li>
+                            <li><div>8 ENTREPRISE</div></li>
+                            <li><div>9 ENTREPRISE</div></li>
+                            <li><div>10 ENTREPRISE</div></li>
+                            <li><div>11 ENTREPRISE</div></li>
+                            <li><div>12 ENTREPRISE</div></li>
+                            <li><div>13 ENTREPRISE</div></li>
+                            <li><div>14 ENTREPRISE</div></li>
+                            <li><div>15 ENTREPRISE</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

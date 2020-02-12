@@ -1,0 +1,192 @@
+{% extends 'base.html.twig' %}
+{% block title %} Qui sommes-nous? {% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="block hidden-sm hidden-xs">
+                <div class="widget-title"><span>L'Association</span></div>
+                <div class="menu-title"><a href="{{ absolute_url(path('marquette_presentation'))}}">Qui sommes-nous?</a></div>
+                <ul class="menu-items">
+                    <li class="item"><a href="#">Aujourd'hui</a></li>
+                    <li class="item"><a href="#">La génèse</a></li>
+                    <li class="item"><a href="#">Organidramme fonctionnel</a></li>
+                    <li class="item"><a href="#">La presse parle de nous...</a></li>
+                </ul>
+                <div class="menu-title"><a href="#">Administratif</a></div>
+                <ul class="menu-items">
+                    <li class="item"><a href="#">Status</a></li>
+                    <li class="item"><a href="#">Règlement intérieur</a></li>
+                </ul>
+                <div class="menu-title"><a href="#">Contact</a></div>
+                <div class="menu-title"><a href="#">Informations MMG</a></div>
+                <ul class="menu-items">
+                    <li class="item"><a href="#">Bureau</a></li>
+                    <li class="item"><a href="#">Conseil d'administration</a></li>
+                </ul>
+            </div>
+
+            <!-- Agenda -->
+            <ul role="tablist" class="tab-popular hidden-sm hidden-xs">
+                <li class="active">
+                    <a href="#tab1" role="tab" data-toggle="tab">
+                        AGENDA
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content hidden-sm hidden-xs">
+                <div role="tabpanel" class="tab-pane active" id="tab1">
+                    <ul class="list-news-popular">
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ asset('ressources/images/agenda-01.jpg') }}" width="100">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorum modi...</p>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ asset('ressources/images/slider/slide-01.jpg') }}">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="text-right all-agenda">
+                        ...<a href="#">Voir tout l'agenda</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-12">
+            <article class="post-detail">
+                <h1>HISTORIQUE MASE</h1>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>1996</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">Réflexion par des industriels pour travailler ensemble sur l’amélioration la sécurité dans les entreprises et sur les sites industriels.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>1996</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Création d’un comité de pilotage (entreprises utilisatrices) sur l’Etang de Berre avec utilisation du document d’accréditation des entreprises sous traitantes Sécurité Hygiène.
+                            Environnement existant chez Esso.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>1997</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Création de l’association MASE Val de Seine (entreprises utilisatrices/entreprises intervenantes) qui deviendra l’association MASE Normandie.
+                            Ecriture d’un référentiel basé sur le document ESSO et le principe de l'amélioration continue (PDCA)
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>1999</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Création de l’association MASE Flandres Côte d’Opale aujourd’hui association MASE Nord Pas de Calais Picardi
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>2004</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Création de l’association MASE Rhône-Alpes
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>2005</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Création de l’association MASE Est
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>Avril 2005</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Création de l’association MASE Nationale
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>2006</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Création de l’association MASE Atlantique
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>2007</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Signature du système commun MASE-UIC
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>2008</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Application du système commun MASE-UIC
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>2008</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Création de l'association MASE Sud-Ouest
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><p class="text-justify"><strong>2012</strong></p></div>
+                    <div class="col-md-11">
+                        <p class="text-justify">
+                            Création de l'association MASE Antilles Guyane
+                        </p>
+                    </div>
+                </div>
+
+            </article>
+            <section class="article-similaire">
+                <div class="titre">Informations similaires</div>
+                <ul>
+                    <li><a href="#">Aujourd'hui</a></li>
+                    <li>La génèse</li>
+                    <li>Organigramme fonctionnel</li>
+                    <li>La presse parle de nous...</li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,126 @@
+{% extends 'base.html.twig' %}
+{% block title %} Qui sommes-nous? {% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="block hidden-sm hidden-xs">
+                <div class="widget-title"><span>L'Association</span></div>
+                <div class="menu-title"><a href="{{ absolute_url(path('marquette_presentation'))}}">Qui sommes-nous?</a></div>
+                <ul class="menu-items">
+                    <li class="item"><a href="{{ path('marquette_presentation') }}">Aujourd'hui</a></li>
+                    <li class="item"><a href="{{ path('maquette_historique') }}">La génèse</a></li>
+                    <li class="item"><a href="#">Organidramme fonctionnel</a></li>
+                    <li class="item"><a href="#">La presse parle de nous...</a></li>
+                </ul>
+                <div class="menu-title"><a href="#">Administratif</a></div>
+                <ul class="menu-items">
+                    <li class="item"><a href="#">Status</a></li>
+                    <li class="item"><a href="#">Règlement intérieur</a></li>
+                </ul>
+                <div class="menu-title"><a href="#">Contact</a></div>
+                <div class="menu-title"><a href="#">Informations MMG</a></div>
+                <ul class="menu-items">
+                    <li class="item"><a href="#">Bureau</a></li>
+                    <li class="item"><a href="#">Conseil d'administration</a></li>
+                </ul>
+            </div>
+
+            <!-- Agenda -->
+            <ul role="tablist" class="tab-popular hidden-sm hidden-xs">
+                <li class="active">
+                    <a href="#tab1" role="tab" data-toggle="tab">
+                        AGENDA
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content hidden-sm hidden-xs">
+                <div role="tabpanel" class="tab-pane active" id="tab1">
+                    <ul class="list-news-popular">
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ asset('ressources/images/agenda-01.jpg') }}" width="100">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorum modi...</p>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ asset('ressources/images/slider/slide-01.jpg') }}">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="text-right all-agenda">
+                        ...<a href="#">Voir tout l'agenda</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-12">
+            <article class="post-detail">
+                <h1>LE MASE QU'EST CE QUE C'EST ?</h1>
+                <p class="text-justify">
+                    MASE est un système de management dont l’objectif est l’amélioration permanente et continue
+                    des performances Sécurité Santé Environnement des entreprises.
+                </p>
+                <p class="text-justify">
+                    C’est un système d’industriels au service des industriels qui cherche à :
+                <ul>
+                    <li>Améliorer la sécurité au travers d’un système de management adapté à l’entreprise.</li>
+                    <li>Mieux s’organiser, mieux communiquer, en améliorant les conditions d’intervention des salariés.</li>
+                    <li>Mettre en place un langage commun afin de progresser ensemble.</li>
+                </ul>
+                </p>
+                <p class="text-justify">
+                    MASE est un groupement d’associations de type « loi 1901 » dont les membres sont les
+                    entreprises utilisatrices et les entreprises intervenantes.
+                    <br>
+                    MASE c’est un référentiel. <br>
+                    C’est une base de réflexion qui permet à l’entreprise de mieux structurer sa démarche SSE en
+                    explorant les cinq axes préconisés. <br>
+
+                    MASE c’est aussi un système de reconnaissance : certification <br>
+
+                    Le but est de pérenniser les systèmes de management de la sécurité par l’analyse périodique
+                    des résultats des entreprises et l’attribution d’une certification par le comité de pilotage
+                    régional après réalisation d’un audit confié à un organisme extérieur sélectionné. <br>
+
+                    La certification est délivrée pour le système commun MASE-UIC suivant accord signé le 20
+                    décembre 2007 entre Alain Devic Président de l’UIC et Serge Kéroullé Président de
+                    l’association MASE National.
+                </p>
+
+            </article>
+            <section class="article-similaire">
+                <div class="titre">Informations similaires</div>
+                <ul>
+                    <li><a href="#">Aujourd'hui</a></li>
+                    <li>La génèse</li>
+                    <li>Organigramme fonctionnel</li>
+                    <li>La presse parle de nous...</li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+{% endblock %}

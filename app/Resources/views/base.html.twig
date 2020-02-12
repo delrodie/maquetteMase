@@ -1,13 +1,353 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Dream Maker, Delrodie AMOIKON">
+        <title>{% block title %}MASE Côte d'ivoire :: AccueilWelcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+            <link href="{{ absolute_url(asset('ressources/css/font-awesome.min.css')) }}" rel="stylesheet" />
+            <link href="{{ absolute_url(asset('ressources/css/bootstrap.min.css')) }}" rel="stylesheet" />
+            <link href="{{ absolute_url(asset('ressources/css/normalize.min.css')) }}" rel="stylesheet" />
+            <link href="{{ absolute_url(asset('ressources/css/owl.carousel.min.css')) }}" rel="stylesheet" />
+            <link href="{{ absolute_url(asset('ressources/css/main.css')) }}" rel="stylesheet" />
+            <link rel="stylesheet" href="{{ absolute_url(asset('ressources/css/mase.css')) }}">
+            <!--<script src="ressources/js/modernizr.js"></script>-->
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="#" />
+
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+    <nav class="menu-res hidden-lg hidden-md ">
+        <div class="menu-res-inner">
+            <ul>
+                <li><a href="{{ absolute_url(path('maquette_index'))}}">ACCUEIL</a></li>
+                <li><a href="{{ absolute_url(path('marquette_presentation'))}}">L'ASSOCIATION</a></li>
+                <li><a href="{{ path('maquette_adherant') }}"> GHI</a></li>
+                <li><a href="{{ path('maquette_adherant') }}"> GIES</a></li>
+                <li><a href="{{ path('maquette_adherant') }}"> GTIS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <div class="row">
+                    <div class="col-md-7 col-sm-6 col-xs-12">
+                        <a href="{{ absolute_url(path('maquette_index'))}}" class="logo">
+                            <img alt="Logo" src="{{ absolute_url(asset('ressources/images/logo-mase-ci.png')) }}" width="100" style="float: left; margin-right: 10px;"/>
+                        </a>
+                        <h4 class="h4" style="color: #F4A236; padding-top: 20px; padding-left: 10px; line-height: 30px;">MANUEL D'AMELIORATION SECURITE SANTE ENVIRONNEMENT DES ENTREPRISES</h4>
+                    </div>
+                    <div class="col-md-5 col-sm-6  text-left col-xs-12 hidden-xs">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="h4" style="color: #F4A236"><i class="fa fa-users"></i> Accès membres</h4>
+                            </div>
+                        </div>
+                        <form action="" class="form-horizontal">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="identifiant">
+                                        <a href="#">Mot de passe oublié</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Mot de passe">
+                                        <a href="{{ path('maquette_adherant') }}">Devenez membre?</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn-primary">Valider</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </header>
+            <nav class="menu font-heading">
+                <div class="menu-icon hidden-lg hidden-md">
+                    <i class="fa fa-navicon"></i>
+                    <span>MENU</span>
+                </div>
+                <ul class="hidden-sm hidden-xs">
+                    <li>
+                        <a href="{{ absolute_url(path('maquette_index'))}}"><i class="fa fa-home fa-lg"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#">L'association <span></span></a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{{ absolute_url(path('marquette_presentation'))}}">Qui sommes-nous?</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('maquette_historique') }}">Historique</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('maquette_adherant') }}">Adhérants</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">GHI <span></span></a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Explication du CT</a>
+                            </li>
+                            <li>
+                                <a href="#">Charte</a>
+                            </li>
+                            <li>
+                                <a href="#">Presentation</a>
+                            </li>
+                            <li>
+                                <a href="#">Procedures</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">GIES <span></span></a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Explication du CT</a>
+                            </li>
+                            <li>
+                                <a href="#">Charte</a>
+                            </li>
+                            <li>
+                                <a href="#">Presentation</a>
+                            </li>
+                            <li>
+                                <a href="#">Procedures</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">GTIS <span></span></a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Explication du CT</a>
+                            </li>
+                            <li>
+                                <a href="#">Charte</a>
+                            </li>
+                            <li>
+                                <a href="#">Presentation</a>
+                            </li>
+                            <li>
+                                <a href="#">Procedures</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="search-icon">
+                    <div class="search-icon-inner">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="recherche..." />
+                        <button>R</button>
+                    </div>
+                </div>
+            </nav>
+            {% block body %}{% endblock %}
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4  col-sm-4 col-xs-12">
+                        <div class="footer-presentation">
+                            <a href="#" class="" style="float:left;">
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/logo-mase-ci_bw-01.png')) }}" width="100" />
+                            </a>
+                            <p class="presentation">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid amet dolor ea excepturi minus quidem quod vero voluptatum? Dolore eaque eligendi hic impedit numquam pariatur ratione velit! Exercitationem!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
+                        <h3>Rubriques </h3>
+                        <ul class="list-category">
+                            <li><a href="{{ absolute_url(path('marquette_presentation'))}}">Presentation</a></li>
+                            <li><a href="{{ path('maquette_historique') }}">Historique</a></li>
+                            <li><a href="{{ path('maquette_adherant') }}">Adhérants</a></li>
+                            <li><a href="{{ path('maquette_adherant') }}">GHI</a></li>
+                            <li><a href="{{ path('maquette_adherant') }}">GIES</a></li>
+                            <li><a href="{{ path('maquette_adherant') }}">GTIS</a></li>
+                            <li><a href="#">Partenaires</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
+                        <h3>Contacts</h3>
+                        <div class="row footer-contact">
+                            <div class="col-md-12"><i class="fa fa-map-marker fa-lg"></i> Abidjan, Côte d'Ivoire</div>
+                            <div class="col-md-12"><i class="fa fa-envelope"></i> 05 BP 0000 Abidan 05</div>
+                            <div class="col-md-12"><i class="fa fa-phone"></i> +225 00 00 00 00</div>
+                            <div class="col-md-12"><fa class="fa fa-envelope-o"></fa> info@mase-cotedivoire.com</div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--All right-->
+                <div class="allright">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <p>    © 2020 <a href="#">MASE CI</a>. Tous droits réservés.</p>
+                        </div>
+
+                        <div class="col-sm-6 col-xs-12">
+                            <ul class="list-social-icon list-social-icon-footer">
+                                <li>
+                                    <a href="#" class="facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+        <style type="text/css">
+            .nd-carrer {
+                width: 300px;
+                height: auto;
+                position: fixed;
+                bottom: 0px;
+                right: 0px;
+                right: 0px;
+                padding: 15px;
+                text-align: center;
+                background-color: #fff;
+                background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+                transition: all ease 0.4s;
+                transform: translateY(100%);
+                z-index: -1;
+                opacity: 0;
+            }
+
+            .nd-carrer.show-nd-carrer {
+                transform: translateY(0%);
+                z-index: 999;
+                opacity: 1;
+            }
+
+            .nd-carrer-inner {
+
+                border: 1px dashed rgba(255, 255, 255, 0.7);
+                padding: 20px 10px;
+                position: relative;
+            }
+
+            .nd-carrer-close {
+                width: 20px;
+                height: 20px;
+                background-color: #fff;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                line-height: 20px;
+                text-align: center;
+                font-size: 15px;
+                cursor: pointer;
+                transition: all ease 1s;
+            }
+
+            .nd-carrer-close:hover {
+                background-color: red;
+                color: #fff;
+            }
+
+            .nd-carrer .nd-carrer-icon {
+                text-align: center;
+                padding: 10px 0px 10px 0px;
+
+            }
+
+            .nd-carrer .nd-carrer-icon img {
+                max-width: 40px;
+            }
+
+            .nd-carrer p {
+                font-family: arial;
+                font-weight: normal;
+                font-size: 15px;
+                color: #fff;
+                margin: 0px 0px 10px 0px;
+                text-align: center;
+            }
+
+            .nd-carrer a {
+                font-size: 15px;
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .nd-carrer a:hover {
+                text-decoration: underline;
+            }
+
+        </style>
+        <div class="nd-carrer">
+            <div class="nd-carrer-inner">
+                <div class="nd-carrer-close">x</div>
+                <p>
+                    Rejoignez-nous <br>Que vous représentiez une entreprise ou que vous soyez salarié d'une entreprise adhérante au MSE
+
+                    <br/>Devenez membre
+                </p>
+                <a href="#"><span>Bulletin d'adhesion</span></a>
+            </div>
+        </div>
+        {% block javascripts %}
+            <script src="{{ absolute_url(asset('ressources/js/jquery.min.js')) }}"></script>
+            <script src="{{ absolute_url(asset('ressources/js/jquery.vticker-min.js')) }}"></script>
+            <script src="{{ absolute_url(asset('ressources/js/bootstrap.js')) }}"></script>
+            <script src="{{ absolute_url(asset('ressources/js/owl.carousel.min.js')) }}"></script>
+            <script src="{{ absolute_url(asset('ressources/js/main.js')) }}"></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    setTimeout(function() {
+
+                        $('.nd-carrer').addClass("show-nd-carrer");
+                    }, 5000);
+                    $('.nd-carrer-close').click(function() {
+                        $('.nd-carrer').removeClass("show-nd-carrer");
+                    });
+                });
+                $('.partenaires').vTicker({
+                    speed: 500,
+                    pause: 3000,
+                    showItems: 15,
+                    animation: 'fade',
+                    mousePause: true,
+                    height: 0,
+                    direction: 'up'
+
+                });
+
+
+            </script>
+        {% endblock %}
     </body>
 </html>
