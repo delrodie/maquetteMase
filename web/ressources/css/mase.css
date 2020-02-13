@@ -20,7 +20,7 @@
     transition: all ease 0.3s;
     font-family: "Roboto Slab", serif; }
 .lis-entreprise li h3 a:hover {
-    color: #F4A236; }
+    color: #0C865F; }
 .lis-entreprise li .meta-post {
     margin: 0px;
     margin-top: 5px; }
@@ -60,7 +60,7 @@ ul.lis-entreprise li a:after {content:attr(data-text);position:absolute;white-sp
     margin-top: 15px;
     font-size: 1.7rem;
     font-style: italic;
-    color: #F4A236;
+    color: #0C865F;
 }
 
 .liste-partenaires {
@@ -139,7 +139,7 @@ ul.lis-entreprise li a:after {content:attr(data-text);position:absolute;white-sp
 }
 
 .acces-membre i.fa{
-    color: #F4A236;
+    color: #0C865F;
 }
 
 .acces-membre span{
@@ -162,7 +162,7 @@ ul.lis-entreprise li a:after {content:attr(data-text);position:absolute;white-sp
 }
 
 .password-forget a:hover{
-    color: #F4A236;
+    color: #0C865F;
 }
 
 .begin-member{

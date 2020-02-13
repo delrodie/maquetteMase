@@ -1,14 +1,6 @@
 ﻿h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: 1.4;
   font-family: "Roboto Slab", serif; }
-
-/*------------------------------------------------------------------
-    Main Style Stylesheet
-    Project:       TECHNEWS | Magagize HTML5 Template
-    Version:        1.0
-    Author:         Congnd91
-    Last change:    25/96/2016
--------------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   min-width: 320px;
@@ -93,7 +85,7 @@ ul, li {
       -webkit-transition: all ease 0.3s;
       transition: all ease 0.3s; }
       .special-news h3 a:hover {
-        color: #F4A236; }
+        color: #0C865F; }
   .special-news .meta-post {
     margin: 0px 0px 0px 0px; }
 
@@ -154,7 +146,7 @@ ul, li {
       position: absolute;
       top: 10px;
       right: 10px;
-      background-color: #F4A236;
+      background-color: #0C865F;
       color: #fff;
       text-transform: uppercase;
       border: none;
@@ -216,7 +208,7 @@ ul, li {
       display: inline-block;
       position: relative; }
       .menu ul li.active > a {
-        color: #F4A236; }
+        color: #0C865F; }
       .menu ul li > a {
         display: block;
         float: left;
@@ -242,8 +234,8 @@ ul, li {
           width: 0px;
           height: 0px;
           border: 4px solid transparent;
-          border-bottom-color: #F4A236;
-          border-right-color: #F4A236;
+          border-bottom-color: #0C865F;
+          border-right-color: #0C865F;
           -moz-transition: all ease 0.3s;
           -o-transition: all ease 0.3s;
           -webkit-transition: all ease 0.3s;
@@ -254,7 +246,7 @@ ul, li {
             .menu ul li > a span {
               right: 10px; } }
       .menu ul li:hover > a {
-        background-color: #F4A236; }
+        background-color: #0C865F; }
         .menu ul li:hover > a span {
           border-bottom-color: #fff;
           border-right-color: #fff; }
@@ -356,7 +348,7 @@ ul, li {
           letter-spacing: 0px;
           font-weight: 700; }
           .menu ul .mega-menu .mega-item p a:hover {
-            color: #F4A236; }
+            color: #0C865F; }
       .menu ul .mega-menu .meta-post {
         margin: 0px;
         font-family: "Open Sans", sans-serif; }
@@ -483,7 +475,7 @@ ul, li {
   font-family: "Oswald", sans-serif;
   font-size: 17px;
   text-transform: uppercase;
-  background-color: #F4A236;
+  background-color: #0C865F;
   color: #fff;
   display: inline-block;
   line-height: 35px;
@@ -518,7 +510,7 @@ ul, li {
       -webkit-transition: all ease 0.3s;
       transition: all ease 0.3s; }
       .owl-spotlight .owl-dots .owl-dot.active, .owl-spotlight .owl-dots .owl-dot:hover {
-        background-color: #F4A236; }
+        background-color: #0C865F; }
   .owl-spotlight:hover .owl-dots {
     opacity: 1; }
   .owl-spotlight:hover .owl-nav .owl-prev {
@@ -545,7 +537,7 @@ ul, li {
     opacity: 0; }
     .owl-spotlight .owl-nav .owl-prev:hover {
       cursor: pointer;
-      background-color: #F4A236; }
+      background-color: #0C865F; }
   .owl-spotlight .owl-nav .owl-next {
     display: block;
     width: 30px;
@@ -566,7 +558,7 @@ ul, li {
     opacity: 0; }
     .owl-spotlight .owl-nav .owl-next:hover {
       cursor: pointer;
-      background-color: #F4A236; }
+      background-color: #0C865F; }
 
 .spotlight-item {
   position: relative;
@@ -584,7 +576,7 @@ ul, li {
       -webkit-transition: all ease 0.3s;
       transition: all ease 0.3s; }
       .spotlight-item h2 a:hover {
-        color: #F4A236; }
+        color: #0C865F; }
   .spotlight-item .spotlight-img {
     position: relative; }
   .spotlight-item .spotlight-item-caption {
@@ -635,8 +627,8 @@ ul, li {
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s; }
   .cate-tag:hover {
-    background-color: #F4A236;
-    border: 1px solid #F4A236;
+    background-color: #0C865F;
+    border: 1px solid #0C865F;
     color: #fff; }
 
 .tab-popular {
@@ -657,7 +649,7 @@ ul, li {
       line-height: 35px;
       padding: 0px 20px; }
     .tab-popular li.active a {
-      background-color: #F4A236;
+      background-color: #0C865F;
       color: #fff; }
 
 .list-news-popular li {
@@ -683,7 +675,7 @@ ul, li {
       transition: all ease 0.3s;
       font-family: "Roboto Slab", serif; }
       .list-news-popular li h3 a:hover {
-        color: #F4A236; }
+        color: #0C865F; }
   .list-news-popular li .meta-post {
     margin: 0px;
     margin-top: 5px; }
@@ -836,7 +828,7 @@ ul, li {
   font-size: 16px;
   text-transform: uppercase;
   border: none;
-  background-color: #F4A236;
+  background-color: #0C865F;
   -moz-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   -webkit-transition: all ease 0.3s;
@@ -851,7 +843,7 @@ ul, li {
   .my-btn.my-btn-dark {
     background-color: #333; }
     .my-btn.my-btn-dark:hover {
-      background-color: #F4A236; }
+      background-color: #0C865F; }
 
 .widget-title {
   background-color: #eeeeee;
@@ -860,7 +852,7 @@ ul, li {
     font-family: "Oswald", sans-serif;
     font-size: 17px;
     text-transform: uppercase;
-    background-color: #F4A236;
+    background-color: #0C865F;
     color: #fff;
     display: inline-block;
     line-height: 35px;
@@ -892,7 +884,7 @@ ul, li {
       transition: all ease 0.3s;
       font-family: "Roboto Slab", serif; }
       .spotlight-item-thumb h3 a:hover {
-        color: #F4A236; }
+        color: #0C865F; }
   .spotlight-item-thumb .meta-post {
     margin: 0px;
     margin-top: 5px; }
@@ -923,7 +915,7 @@ ul, li {
     color: #333;
     font-weight: 700; }
     .news-two-large h3 a:hover {
-      color: #F4A236; }
+      color: #0C865F; }
 
 .news-two-large.news-three-large {
   margin-bottom: 20px; }
@@ -958,7 +950,7 @@ ul, li {
       -webkit-transition: all ease 0.3s;
       transition: all ease 0.3s; }
       .owl-review .owl-dots .owl-dot.active, .owl-review .owl-dots .owl-dot:hover {
-        background-color: #F4A236; }
+        background-color: #0C865F; }
   .owl-review:hover .owl-dots {
     opacity: 1; }
   .owl-review:hover .owl-nav .owl-prev {
@@ -985,7 +977,7 @@ ul, li {
     opacity: 0; }
     .owl-review .owl-nav .owl-prev:hover {
       cursor: pointer;
-      background-color: #F4A236; }
+      background-color: #0C865F; }
   .owl-review .owl-nav .owl-next {
     display: block;
     width: 30px;
@@ -1006,7 +998,7 @@ ul, li {
     opacity: 0; }
     .owl-review .owl-nav .owl-next:hover {
       cursor: pointer;
-      background-color: #F4A236; }
+      background-color: #0C865F; }
     @media screen and (max-width: 767px) {
       .owl-review .owl-nav .owl-next {
         left: auto;
@@ -1038,7 +1030,7 @@ ul, li {
         transition: all ease 0.3s;
         font-weight: 700; }
         .owl-review .review-item-caption h3 a:hover {
-          color: #F4A236; }
+          color: #0C865F; }
     .owl-review .review-item-caption .meta-post a {
       color: #fff; }
     .owl-review .review-item-caption .meta-post span {
@@ -1093,7 +1085,7 @@ ul, li {
     .list-special .news-two-large h3 a {
       color: #fff; }
       .list-special .news-two-large h3 a:hover {
-        color: #F4A236; }
+        color: #0C865F; }
   .list-special .meta-post a {
     color: #eee; }
   .list-special .meta-post span {
@@ -1107,7 +1099,7 @@ ul, li {
   min-height: 200px;
   padding: 60px 0px 0px 0px;
   background-color: #333;
-  border-top: 5px solid #F4A236;
+  border-top: 5px solid #0C865F;
   margin-top: 50px; }
   .footer.footer-fix {
     margin: 0px; }
@@ -1145,7 +1137,7 @@ ul, li {
         -webkit-transition: all ease 0.3s;
         transition: all ease 0.3s; }
       .footer .list-category li:hover:before {
-        border: 2px solid #F4A236; }
+        border: 2px solid #0C865F; }
       .footer .list-category li a {
         color: #999;
         -moz-transition: all ease 0.3s;
@@ -1167,8 +1159,8 @@ ul, li {
     -webkit-transition: all ease 0.3s;
     transition: all ease 0.3s; }
     .footer .list-tags a:hover {
-      background-color: #F4A236;
-      border: 1px solid #F4A236;
+      background-color: #0C865F;
+      border: 1px solid #0C865F;
       color: #fff; }
 
 .allright {
@@ -1234,7 +1226,7 @@ ul, li {
       -webkit-transition: all ease 0.3s;
       transition: all ease 0.3s; }
       .news-cate-item h3 a:hover {
-        color: #F4A236; }
+        color: #0C865F; }
   .news-cate-item.news-cate-item-first {
     padding-top: 0px;
     border: none; }
@@ -1260,7 +1252,7 @@ ul, li {
     -webkit-transition: all ease 0.3s;
     transition: all ease 0.3s; }
     .paging a:hover, .paging a.current {
-      background-color: #F4A236; }
+      background-color: #0C865F; }
 
 /***reviews*/
 .reviews-item {
@@ -1284,14 +1276,14 @@ ul, li {
         -webkit-transition: all ease 0.3s;
         transition: all ease 0.3s; }
         .reviews-item .reviews-des h3 a:hover {
-          color: #F4A236; }
+          color: #0C865F; }
     .reviews-item .reviews-des .meta-post {
       margin-top: 10px; }
   .reviews-item:hover {
     box-shadow: 7px 7px 0px 1px #eeeeee;
     border: 1px solid #333; }
     .reviews-item:hover h3 a {
-      color: #F4A236; }
+      color: #0C865F; }
   .reviews-item .view-bar {
     margin-top: 20px;
     margin-bottom: -5px; }
@@ -1321,7 +1313,7 @@ ul, li {
     padding: 0px 30px; }
     .load-more a:hover {
       color: #fff;
-      background-color: #F4A236; }
+      background-color: #0C865F; }
 
 .embed-container {
   position: relative;
@@ -1424,7 +1416,7 @@ ul, li {
     .list-video .related-video-item.related-video-item-fix {
       border: none; }
     .list-video .related-video-item:hover h3 a {
-      color: #F4A236; }
+      color: #0C865F; }
     .list-video .related-video-item:hover .related-video-img a span {
       opacity: 1; }
 
@@ -1455,7 +1447,7 @@ ul, li {
     padding: 20px 20px 20px 23px;
     font-style: italic;
     background-color: #eeeeee;
-    border-left: 3px solid #F4A236; }
+    border-left: 3px solid #0C865F; }
 
 .post-detail .post-detail-img-left {
   width: 200px;
@@ -1522,7 +1514,7 @@ ul, li {
       transition: all ease 0.3s;
       color: #333; }
       .author-info .author-text h3 a:hover {
-        color: #F4A236; }
+        color: #0C865F; }
     .author-info .author-text h3 span {
       display: block;
       font-size: 12px;
@@ -1540,7 +1532,7 @@ ul, li {
       transition: all ease 0.3s;
       margin-left: 10px; }
       .author-info .author-text p a:hover {
-        color: #F4A236;
+        color: #0C865F;
         text-decoration: underline; }
 
 .reply-wrap {
