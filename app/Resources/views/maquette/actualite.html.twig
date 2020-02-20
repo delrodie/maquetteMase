@@ -1,0 +1,180 @@
+{% extends 'base.html.twig' %}
+{% block title %} Qui sommes-nous? {% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-8 col-sm-12">
+            <div class="box-caption">
+                <span>Actualités</span>
+            </div>
+            <div class="list-news-cate">
+                <article class="news-cate-item  news-cate-item-first">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <a href="{{ path('maquette_article') }}">
+                                <img alt="" src="{{ asset('ressources/images/slider/slide-01.jpg') }}">
+                            </a>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-12">
+                            <h3><a href="{{ path('maquette_article') }}">Actualité 1</a></h3>
+                            <div class="meta-post">
+                                <span> 20 Fev 2020</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At enim sequor utilitatem. Quippe: habes enim a rhetoribus; Callipho ad virtutem nihil adiunxit nisi voluptatem.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-cate-item">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <a href="{{ path('maquette_article') }}">
+                                <img alt="" src="{{ asset('ressources/images/slider/slide-02.jpg') }}">
+                            </a>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-12">
+                            <h3><a href="{{ path('maquette_article') }}">Titre Actualité 2</a></h3>
+                            <div class="meta-post">
+                                <span>17 Fev 2020</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At enim sequor utilitatem. Quippe: habes enim a rhetoribus; Callipho ad virtutem nihil adiunxit nisi voluptatem.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-cate-item">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <a href="{{ path('maquette_article') }}">
+                                <img alt="" src="{{ asset('ressources/images/slider/slide-03.jpg') }}">
+                            </a>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-12">
+                            <h3><a href="{{ path('maquette_article') }}"> Titre actualité 3</a></h3>
+                            <div class="meta-post">
+                                <span>02 Fev 2020</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At enim sequor utilitatem. Quippe: habes enim a rhetoribus; Callipho ad virtutem nihil adiunxit nisi voluptatem.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-cate-item">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <a href="{{ path('maquette_article') }}">
+                                <img alt="" src="{{ asset('ressources/images/slider/slide-04.jpg') }}">
+                            </a>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-12">
+                            <h3><a href="{{ path('maquette_article') }}">titre actualité 4</a></h3>
+                            <div class="meta-post">
+                                <span>30 Dec 2019</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At enim sequor utilitatem. Quippe: habes enim a rhetoribus; Callipho ad virtutem nihil adiunxit nisi voluptatem.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="paging">
+                <a href="#">Prec</a>
+                <a href="#">1</a>
+                <a href="#" class="current">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">Suiv</a>
+            </div>
+
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <ul role="tablist" class="tab-popular">
+                <li class="active">
+                    <a href="#tab1" role="tab" data-toggle="tab">
+                        AGENDA
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="tab1">
+                    <ul class="list-news-popular">
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-01.jpg')) }}" width="100">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorum modi...</p>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-02.jpg')) }}">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-01.jpg')) }}">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/slider/slide-04.jpg')) }}">
+                            </a>
+                            <h3><a href="#">Avis d'utilisation de Manilles /Rappel</a></h3>
+                            <div class="meta-post">
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i> 27-12-2019
+                                </a>
+                                <em></em>
+                                <span>
+                                           <i class="fa fa-clock-o"></i> 16:06
+                                        </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="text-right all-agenda">
+                        ...<a href="#">Archives Agenda</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="connect-us">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="fb-root"></div>
+                        <div class="fb-page" data-href="https://www.facebook.com/dreammakercicom/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/dreammakercicom/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/dreammakercicom/">DREAM MAKER</a></blockquote></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v6.0"></script>
+{% endblock %}

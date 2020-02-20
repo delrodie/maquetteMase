@@ -42,4 +42,20 @@ class MaquetteController extends Controller
     {
         return $this->render(":maquette:adherant.html.twig");
     }
+
+    /**
+     * @Route("/actualites/page-1/", name="maquette_actulaite")
+     */
+    public function actualite()
+    {
+        return $this->render("maquette/actualite.html.twig");
+    }
+
+    /**
+     * @Route("/actualites/page-1/article", name="maquette_article")
+     */
+    public function article()
+    {
+        return $this->render("maquette/article.html.twig");
+    }
 }

@@ -33,9 +33,11 @@
             <ul>
                 <li><a href="{{ absolute_url(path('maquette_index'))}}">ACCUEIL</a></li>
                 <li><a href="{{ absolute_url(path('marquette_presentation'))}}">L'ASSOCIATION</a></li>
-                <li><a href="{{ path('maquette_adherant') }}"> GHI</a></li>
-                <li><a href="{{ path('maquette_adherant') }}"> GIES</a></li>
-                <li><a href="{{ path('maquette_adherant') }}"> GTIS</a></li>
+                <li><a href="{{ path('maquette_adherant') }}"> Actualités</a></li>
+                <li><a href="{{ path('maquette_adherant') }}"> Referentiel</a></li>
+                <li><a href="{{ path('maquette_adherant') }}"> Base Form</a></li>
+                <li><a href="{{ path('maquette_adherant') }}"> Gallerie</a></li>
+                <li><a href="{{ path('maquette_adherant') }}"> Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -86,70 +88,49 @@
                     <li>
                         <a href="{{ absolute_url(path('maquette_index'))}}"><i class="fa fa-home fa-lg"></i> </a>
                     </li>
-                    <li>
-                        <a href="#">L'association <span></span></a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="{{ absolute_url(path('marquette_presentation'))}}">Qui sommes-nous?</a>
-                            </li>
-                            <li>
-                                <a href="{{ path('maquette_historique') }}">Historique</a>
-                            </li>
-                            <li>
-                                <a href="{{ path('maquette_adherant') }}">Adhérants</a>
-                            </li>
-                        </ul>
+
+                    <li class="mega">
+                        <a href="#">L'association<span></span></a>
+                        <div class="mega-menu">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <ul class="submenu2">
+                                        <li><a href="{{ path('marquette_presentation') }}">Qui sommes-nous?</a></li>
+                                        <li><a href="{{ path('maquette_historique') }}">Historique</a> </li>
+                                        <li><a href="{{ path('maquette_adherant') }}">Adhesion</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="submenu2">
+                                        <li><a href="#">Organigramme</a></li>
+                                        <li><a href="#">Conseil d'administration</a></li>
+                                        <li><a href="#">Comité de pilotage</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="submenu2">
+                                        <li><a href="#">Statut</a></li>
+                                        <li><a href="#">Reglement interieur</a></li>
+                                        <li><a href="#">Document</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <a href="#">GHI <span></span></a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="#">Explication du CT</a>
-                            </li>
-                            <li>
-                                <a href="#">Charte</a>
-                            </li>
-                            <li>
-                                <a href="#">Presentation</a>
-                            </li>
-                            <li>
-                                <a href="#">Procedures</a>
-                            </li>
-                        </ul>
+                        <a href="{{ path('maquette_actulaite') }}">Actualités</a>
                     </li>
                     <li>
-                        <a href="#">GIES <span></span></a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="#">Explication du CT</a>
-                            </li>
-                            <li>
-                                <a href="#">Charte</a>
-                            </li>
-                            <li>
-                                <a href="#">Presentation</a>
-                            </li>
-                            <li>
-                                <a href="#">Procedures</a>
-                            </li>
-                        </ul>
+                        <a href="#">Referentiel </a>
                     </li>
                     <li>
-                        <a href="#">GTIS <span></span></a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="#">Explication du CT</a>
-                            </li>
-                            <li>
-                                <a href="#">Charte</a>
-                            </li>
-                            <li>
-                                <a href="#">Presentation</a>
-                            </li>
-                            <li>
-                                <a href="#">Procedures</a>
-                            </li>
-                        </ul>
+                        <a href="#">Base Form </a>
+                    </li>
+                    <li>
+                        <a href="#">Galerie </a>
+                    </li>
+                    <li>
+                        <a href="#">Contact </a>
                     </li>
                 </ul>
                 <div class="search-icon">
@@ -170,7 +151,7 @@
                     <div class="col-md-4  col-sm-4 col-xs-12">
                         <div class="footer-presentation">
                             <a href="#" class="" style="float:left;">
-                                <img alt="" src="{{ absolute_url(asset('ressources/images/logo-mase-ci_bw-01.png')) }}" width="100" />
+                                <img alt="" src="{{ absolute_url(asset('ressources/images/logo-mase_bw.png')) }}" width="150" />
                             </a>
                             <p class="presentation">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid amet dolor ea excepturi minus quidem quod vero voluptatum? Dolore eaque eligendi hic impedit numquam pariatur ratione velit! Exercitationem!
@@ -180,13 +161,14 @@
                     <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
                         <h3>Rubriques </h3>
                         <ul class="list-category">
-                            <li><a href="{{ absolute_url(path('marquette_presentation'))}}">Presentation</a></li>
-                            <li><a href="{{ path('maquette_historique') }}">Historique</a></li>
-                            <li><a href="{{ path('maquette_adherant') }}">Adhérants</a></li>
-                            <li><a href="{{ path('maquette_adherant') }}">GHI</a></li>
-                            <li><a href="{{ path('maquette_adherant') }}">GIES</a></li>
-                            <li><a href="{{ path('maquette_adherant') }}">GTIS</a></li>
-                            <li><a href="#">Partenaires</a></li>
+                            <li><a href="{{ absolute_url(path('marquette_presentation'))}}">L'association</a></li>
+                            <li><a href="{{ path('maquette_historique') }}">Actualités</a></li>
+                            <li><a href="{{ path('maquette_adherant') }}">Référentiels</a></li>
+                            <li><a href="{{ path('maquette_adherant') }}">Base Form</a></li>
+                            <li><a href="{{ path('maquette_adherant') }}">Galerie</a></li>
+                            <li><a href="{{ path('maquette_adherant') }}">Contact</a></li>
+                            <li><a href="#">Adherants</a></li>
+                            <li><a href="#">Certifiés</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">

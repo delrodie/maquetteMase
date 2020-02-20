@@ -32,7 +32,7 @@ ul.lis-entreprise li a:after {content:attr(data-text);position:absolute;white-sp
     0%, 100% {margin-top:0;}
     99.99% {margin-top:-100%;}
 }
-.list-news-popular li img {
+.list-rex-popular li img {
     width: 100px;
     height: 75px;
     float: left;
@@ -202,4 +202,98 @@ ul.lis-entreprise li a:after {content:attr(data-text);position:absolute;white-sp
 
 .actualites-partenaire{
     margin-top: 100px;
+}
+
+.menu ul .submenu2 li {
+    margin: 5px 0px;
+    display: block; }
+.menu ul .submenu2 li a {
+    display: block;
+    line-height: 35px;
+    text-align: left;
+    text-transform: none;
+    padding: 0px 15px;
+    letter-spacing: 0px;
+    color: #333;
+    font-size: 15px;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    font-family: "Roboto Slab", serif;
+    float: none; }
+.menu ul .submenu2 li a:hover {
+    background-color: #036691;
+    color: #fff;
+    padding-left: 20px;
+    letter-spacing: 1px; }
+
+.menu ul .mega-menu {
+    position: absolute;
+    background-color: #fff;
+    z-index: 9999;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    left: 0px;
+    right: 0px;
+    min-height: 200px;
+    height: auto;
+    margin-top: 15px;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    border: 1px solid #999;
+    padding: 20px 20px 20px 20px; }
+
+.faq{
+    margin-top: 100px;
+}
+.rex{
+    margin-top: 50px;
+}
+
+.special-rex {
+    border: 1px solid #eeeeee;
+    min-height: 150px;
+    padding: 0px 15px 0px 80px;
+    /*max-width: 600px;*/
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: 10px; }
+.special-rex img {
+    margin: 0 auto 15px auto;
+    width: 100px !important;
+    height: 100px !important; }
+.special-rex h3 {
+    margin: 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 0px 15px 0px; }
+.special-rex h3 a {
+    color: #333;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s; }
+.special-rex h3 a:hover {
+    color: #0C865F; }
+.special-rex .meta-post {
+    margin: 0px 0px 0px 0px; }
+
+.carousel-partenaire-certifie img{
+    margin: 25px auto 15px auto;
+    width: 100px !important;
+    height: 100px !important;
+}
+.carousel-partenaire-certifie h3 {
+    margin: 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 0px 15px 0px; }
+.carousel-partenaire-certifie h3 a:hover{
+    color: #0C865F;
 }

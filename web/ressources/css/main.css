@@ -269,7 +269,7 @@ ul, li {
       top: 100%;
       border: 1px solid #999;
       left: 0px;
-      width: 200px;
+      width: 300px;
       height: auto;
       background-color: #fff;
       visibility: hidden;
@@ -834,7 +834,7 @@ ul, li {
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s; }
   .my-btn:hover {
-    background-color: #ea5f54;
+    background-color: #036691;
     outline: none;
     color: #fff; }
   .my-btn:focus {
